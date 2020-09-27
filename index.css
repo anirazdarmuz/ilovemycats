@@ -2,6 +2,7 @@
     font-family: 'Lexend Peta', sans-serif;
     font-size: 11px;
     color: #848098;
+    box-sizing: border-box;
 }
 
 body {
@@ -53,11 +54,15 @@ img:hover {
 .content-box {
     border: solid 1px #DFE7EE;
     background-color: #FFFFFF;
+    border-radius: 16px;
 }
 
 .nav {
     padding: 20px 10px 20px 10px;
-    margin: 0px 150px 0px 150px;
+    position: fixed;
+    left: 158px;
+    top: 0px;
+    width: calc(100vw - 316px);
 }
 
 .footer {
@@ -93,6 +98,8 @@ img:hover {
     display: inline-block;
     padding: 0px 20px 20px 20px;
     vertical-align: top;
+    border: solid 1px #DFE7EE;
+    border-radius: 16px;
 }
 
 .inline {
