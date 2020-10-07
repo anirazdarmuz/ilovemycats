@@ -6,18 +6,21 @@
 }
 
 body {
-    background-color: #FFFFFF;
+    background-image: url(http://www.mediafire.com/convkey/cbd4/b0x8ok7q41dz8m9zg.jpg);
+    background-position: center;
+    background-attachment: fixed;
 }
 
 h1 {
     text-align: center;
-    color: #AB7189;
+    color: #FFFFFF;
     font-size: 52px;
     margin: 100px 20px 20px 20px;
 }
 
 h2 {
     text-align: center;
+    color: #FFFFFF;
     font-size: 20px;
     font-style: italic;
     margin: 10px 10px 50px 10px;
@@ -33,20 +36,28 @@ a:hover {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: circle;
 }
-
-/* li {
-    display: inline;
-} */
 
 img:hover {
     opacity: 0.5;
 }
 
+.nav {
+    position: fixed;
+    padding: 20px 10px 20px 10px;
+    left: 158px;
+    top: 0px;
+    width: calc(100vw - 316px);
+}
+
+.footer {
+    z-index: 1;
+    padding: 20px 10px 20px 10px;
+    margin: 0px 150px 0px 150px;
+}
+
 .main-view {
-    /* column-count: 2;
-    column-gap: 50px; */
     margin: 20px 150px 20px 150px;
     padding: 50px 100px 50px 100px;
 }
@@ -55,19 +66,15 @@ img:hover {
     border: solid 1px #DFE7EE;
     background-color: #FFFFFF;
     border-radius: 16px;
+    /* opacity: 0.25; */
 }
 
-.nav {
-    padding: 20px 10px 20px 10px;
-    position: fixed;
-    left: 158px;
-    top: 0px;
-    width: calc(100vw - 316px);
-}
-
-.footer {
-    padding: 20px 10px 20px 10px;
-    margin: 0px 150px 0px 150px;
+.inline-block-box {
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+    vertical-align: top;
+    border: solid 0px #DFE7EE;
+    border-radius: 16px;
 }
 
 .cat-pic {
@@ -91,17 +98,32 @@ img:hover {
 }
 
 .extra-margin {
-    margin: 0px 0px 20px 0px;
-}
-
-.inline-block-box {
-    display: inline-block;
-    padding: 0px 20px 20px 20px;
-    vertical-align: top;
-    border: solid 1px #DFE7EE;
-    border-radius: 16px;
+    margin: 20px 0px 20px 0px;
 }
 
 .inline {
     display: inline;
+}
+
+.position-left {
+    position: relative;
+    right: 20px;
+}
+
+.position-right {
+    position: relative;
+    left: 10px;
+}
+
+.list-box {
+    width: 250px;
+}
+
+.expand-collapse {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: #DFE7EE;
 }
